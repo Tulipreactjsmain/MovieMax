@@ -27,9 +27,10 @@ export default function MyRoutes() {
         console.log(error);
         setError(error);
       } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 4000);
+        setLoading(false);
+        // setTimeout(() => {
+        //   setLoading(false);
+        // }, 4000);
       }
     };
     fetchTv();
@@ -44,7 +45,7 @@ export default function MyRoutes() {
           <Routes>
             <Route path="/" element={<Home data={data} loading={loading} />} />
             <Route path="/Tvshows" element={<Tvshows data={data} loading={loading}/>} />
-            <Route path="/Tvdetails" element={<Tvdetails data={data} loading={loading}/>} />
+            <Route path="/Tvshows/:id" element={<Tvdetails data={data} loading={loading}/>} />
           </Routes>
         </>
       )}

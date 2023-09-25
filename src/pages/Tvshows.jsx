@@ -16,7 +16,7 @@ export default function Tvshows({ data, loading }) {
           className="home-section2 Tvshows d-flex flex-wrap justify-content-center gap-5"
         >
           {data?.map((show) => (
-            <Link key={show.id} to="/Tvdetails">
+            <Link key={show.id} to={`/tvshows/${show.id}`}>
               <div className="movie-card">
                 <div
                   className="mycard"
