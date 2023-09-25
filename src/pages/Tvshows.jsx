@@ -1,11 +1,9 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Loader from "../utils/Loader";
-import {useLocation} from 'react-router-dom'
 
-export default function Tvshows({ data, loading }) {
+export default function Tvshows({ data }) {
   console.log(data);
-  console.log(location)
   return (
     <>
       {!data ? (
