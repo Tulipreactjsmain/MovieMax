@@ -8,7 +8,7 @@ export default function Tvshowscomponent({data}) {
       className="home-section2 d-flex flex-wrap justify-content-center gap-5 pt-5"
     >
       {data.slice(0,30).map((show) => (
-        <Link key={show.id} to="/Tvdetails">
+        <Link key={show.id} to={`/tvshows/${show.id}`}>
           <div  className="movie-card ">
             <div
               className="mycard"

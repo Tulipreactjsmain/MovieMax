@@ -62,7 +62,7 @@ export default function Home({ data }) {
           >
             {filterRating.slice(0, 3).map((show) => (
               <Carousel.Item key={show.id} className="full-height">
-                <Link to={`/Tvdetails`}>
+                <Link to={`/tvshows/${show.id}`}>
                   <div
                     className="image-container full-height"
                     style={{
